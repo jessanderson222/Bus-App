@@ -1,0 +1,6 @@
+<h1>Frequent Bus Rider <%= @person.name %></h1>
+<h3>Buses</h3>
+<% @person.buses.each do |bus| %>
+  <%= bus.name %>
+  <% end %>
+<%= button_to "new route", new_route_path, method: :get %>

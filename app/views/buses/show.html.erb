@@ -1,0 +1,7 @@
+<h1>Bus number <%= @bus.name %> is scheduled.</h1>
+<h3>Frequent Riders</h3>
+<ul>
+<% @bus.people.each do |person| %>
+<li><%= person.name %></li>
+</ul>
+<% end %>
